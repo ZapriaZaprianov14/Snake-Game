@@ -3,6 +3,7 @@ from random import randint
 from sys import exit
 import os
 
+#Test commit comment added here
 def printField(cells):
     for cell in cells:
         #Prints snake
@@ -23,7 +24,6 @@ def printField(cells):
 def changeApple(apple):
     apple=(randint(1,boxHeight-1),randint(1,boxWidth-1))
 
-#newHead[0]<=0 or newHead[0]>=boxHeight-1 or newHead[1]<=0 or newHead[1]>=boxWidth-1
 
 def updateSnake():
     global applePos
@@ -52,6 +52,7 @@ def updateSnake():
             break
     #Removes the last bodypart if the above conditions are not met mentaining the size of the snake
     else:
+        a=1+1
         snakeBody.pop(-1)
     snakeBody.insert(0,newHead)
 
@@ -60,6 +61,7 @@ boxHeight=16
 boxWidth=32
 applePos=(randint(1,boxHeight-2),randint(1,boxWidth-2))
 snakeBody=[(1,2),(1,1)]
+#A dictionary containing values for aech direction
 DIRECTIONS= {'w': (-1,0),'s': (1,0),'a': (0,-1),'d': (0,1)}
 direction=DIRECTIONS['d']
 #Inits the playing field
