@@ -52,13 +52,13 @@ def updateSnake():
             break
     #Removes the last bodypart if the above conditions are not met mentaining the size of the snake
     else:
-        a=1+1
         snakeBody.pop(-1)
     snakeBody.insert(0,newHead)
 
 
 boxHeight=16
 boxWidth=32
+h=1+1
 applePos=(randint(1,boxHeight-2),randint(1,boxWidth-2))
 snakeBody=[(1,2),(1,1)]
 #A dictionary containing values for aech direction
