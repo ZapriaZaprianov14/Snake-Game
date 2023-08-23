@@ -41,7 +41,7 @@ def updateSnake():
     #Checks if the snake bit herself
     if(newHead in snakeBody):
         exit("You died")
-    #Checks if the snake ate the apple and does not remove the last bodypart making it larger puk i ne bachka
+    #Checks if the snake ate the apple and does not remove the last bodypart making it larger puk i ne bachka dgdgdgdfg
     if(newHead[0]==applePos[0] and newHead[1]==applePos[1]):
        while True:
         x=randint(1,boxHeight-2)
@@ -58,7 +58,7 @@ def updateSnake():
 
 boxHeight=16
 boxWidth=32
-h=1+1
+h=1+2
 applePos=(randint(1,boxHeight-2),randint(1,boxWidth-2))
 snakeBody=[(1,2),(1,1)]
 #A dictionary containing values for aech direction
